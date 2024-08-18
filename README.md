@@ -1,4 +1,5 @@
 IMDB Sentiment Analysis with Fine-Tuned BERT using LoRA
+
 This repository contains a Jupyter notebook that demonstrates the fine-tuning of a BERT-based model for sentiment analysis on the IMDB dataset. The fine-tuning process leverages Low-Rank Adaptation (LoRA) to make the process more efficient and less resource-intensive.
 
 Overview
