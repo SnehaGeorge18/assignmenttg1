@@ -1,0 +1,62 @@
+Research 
+
+
+What is LLM:
+Open AI-> GPT 3.5 TO Chat GPT
+Wood-> BENCHES
+3 ways to train model
+
+
+5 STEPS:
+1.Choose fine tuning model
+2.Prepare training dataset
+3.Choose a base model
+4.Fine tune model via SL
+5.Evaluate model performance
+
+
+LORA(LOW RANK ADAPTATION)
+Pre trained + Additional = Result
+
+
+Key Factors in Fine-Tuning:
+
+Dataset Size and Quality: The quality and relevance of the fine-tuning dataset are critical. A small, high-quality dataset can sometimes outperform a large but noisy one.
+Domain Specificity: Fine-tuning is particularly effective when the new domain is significantly different from the general data the model was pre-trained on.
+Task Specificity: Fine-tuning can improve performance on specific tasks like sentiment analysis, question answering, or summarization.
+
+
+
+COMPARSION:
+
+Aspect	              Before Fine-Tuning	                After Fine-Tuning
+Accuracy	      General but often imprecise predictions	Task-specific, accurate, and contextually relevant
+Task Specialization   not specialized	                        Highly specialized for the fine-tuned task
+Training Time         High if training from scratch	        Significantly reduced due to reusing pre-trained 
+Data Requirement      Requires large and diverse datasets	Smaller, task-specific datasets are sufficient
+Adaptability	      Limited in handling domain-specific task	Well-adapted to specialized domains and tasks
+
+
+
+GPT-3 Fine-Tuning for Specific Domains: Studies have shown that GPT-3, when fine-tuned on legal texts, performs significantly better in generating legal documents than the base model.
+
+BERT Fine-Tuning for Sentiment Analysis: BERT has been fine-tuned on various sentiment analysis datasets, demonstrating improved accuracy in predicting sentiments compared to the pre-trained model.
+
+Adapter-Based Fine-Tuning: Research comparing adapter-based fine-tuning with full fine-tuning often highlights the trade-offs between computational efficiency and performance, with adapters being more efficient but sometimes slightly less accurate.
+
+
+Why BERT?
+Use BERT if your task requires deep understanding of text, such as sentiment analysis, question answering, or any task where token-level accuracy and context are critical. BERT's bidirectional nature makes it superior for these applications.
+
+Use GPT-2 if you need a smaller, more efficient model for text generation tasks or if you are working in an environment with limited computational resources but still need good generative performance.
+
+Use GPT-3 if you require state-of-the-art text generation, versatility across many tasks, or need to handle tasks with minimal fine-tuning. However, be prepared for the high computational costs and potential challenges related to bias and control over outputs.
+
+
+
+Real-World Examples:
+Sentiment Analysis
+
+
+CONCLUSION:
+Fine-tuning transforms a general-purpose model into a specialized tool, significantly enhancing its performance on specific tasks while reducing the need for extensive training data and resources. The difference in performance before and after fine-tuning is typically substantial, making fine-tuning an essential process in deploying effective and efficient AI solutions.
